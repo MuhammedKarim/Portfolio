@@ -47,9 +47,9 @@ nav a {
     margin: 2.5vh 1.25vw;
 }
 .page .title {
-    background-color: aquamarine;
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3%;
+    background-color: #008073;
+    color: white;
+    font-weight: lighter;
 }
 .title h1 {
     margin: 0px;
@@ -105,8 +105,9 @@ nav a {
 .projects h3 {
     margin: 10px;
 }
-
-
+.col img {
+    height: 40%;
+}
 
 
 
