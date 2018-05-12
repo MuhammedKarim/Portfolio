@@ -78,3 +78,72 @@ nav a {
     line-height: 50px;
     letter-spacing: 1.5;
 }
+.projectsParent {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.projects {
+    height: 35%;
+    width: 40%;
+    border: 2px solid black;
+}
+.projects .title {
+    height: 15%;
+}
+.projectDesc {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+}
+.projects img {
+    width: 50%;
+    height: 85%;
+}
+.projects h3 {
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* carely.jeyda@itis0k.com */
