@@ -1,8 +1,13 @@
 * {
     font-family: 'Arimo', sans-serif;
 }
- 
+body {
+    margin: 0;
+}
 /* ~~~~~ HEADER ~~~~~ */
+nav {
+    padding-top: 15px;
+}
 nav ul {
     background-color: #e6e6e6;
     display: flex;
@@ -13,7 +18,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     position: fixed;
-    margin-left: 2.5vw;
+    margin: 0vh 1.25vw;
 }
 .navli {
     display: inline-block;
@@ -39,21 +44,37 @@ nav a {
 .page {
     height: 100vh;
     width: 95vw;
-    margin-left: 2.5vw;
+    margin: 2.5vh 1.25vw;
+}
+.page .title {
+    background-color: aquamarine;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+.title h1 {
+    margin: 0px;
+    padding: 7px 15px;
+}
+.page {
+    border: 2px solid black;
+    background-image: url('assets/bg.png');
 }
 #home {
     background-image: url('assets/2018.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 #home h1 {
-    padding-top: 50px;
+    padding: 50px 0px 0px 25px;
     font-size: 40px;
 }
-#about title {
-    background-color: aquamarine;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+#about blockquote {
+    font-size: 40px;
+    color: brown;
 }
-
-
+#about p, #about li {
+    margin: 10px 40px;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 1.5;
+}
