@@ -3,6 +3,7 @@
 }
 body {
     margin: 0;
+    background-image: url('assets/bg.png');
 }
 /* ~~~~~ HEADER ~~~~~ */
 nav {
@@ -47,7 +48,7 @@ nav a {
     margin: 2.5vh 1.25vw;
 }
 .page .title {
-    background-color: #008073;
+    background-color: #008CBA;
     color: white;
     font-weight: lighter;
 }
@@ -79,36 +80,58 @@ nav a {
     letter-spacing: 1.5;
 }
 .projectsParent {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
+    display: grid;
+    margin-top: 15px;
+    height: 93%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "project1 project2"
+        "project3 project4"
+}
+.project1 {
+    grid-area: project1;
+}
+.project2 {
+    grid-area: project2;
+}
+.project3 {
+    grid-area: project3;
+}
+.project4 {
+    grid-area: project4;
 }
 .projects {
-    height: 35%;
-    width: 40%;
     border: 2px solid black;
 }
-.projects .title {
-    height: 15%;
-}
-.projectDesc {
-    display: flex;
-    flex-flow: row nowrap;
-    height: 100%;
+.projects {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 10% 1fr;
+    grid-template-areas: 
+        "title title"
+        "img desc"
 }
 .projects img {
-    width: 50%;
-    height: 85%;
+    grid-area: img;
+    height: 100%;
+    width: 100%;
 }
-.projects h3 {
-    margin: 10px;
+.projects .desc {
+    grid-area: desc;
+    padding: 10px 20px;
+    line-height: 2;
+}
+.projects .title {
+    grid-area: title;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 .projects button {
-    margin: 0px 10px;border: none;
+    margin: 10px 10px;border: none;
     background-color: #008CBA;
-    color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -119,10 +142,15 @@ nav a {
 }
 .projects button:hover {
     background-color: white;
-    color: #008CBA;
     border: 1px solid #008CBA;
 }
-
+.projects button a {
+    text-decoration: none;
+    color: white;
+}
+.projects button a:hover {
+    color: #008CBA;
+}
 
 
 
