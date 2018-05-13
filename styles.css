@@ -60,6 +60,7 @@ nav a {
     border: 2px solid black;
     background-image: url('assets/bg.png');
 }
+
 #home {
     background-image: url('assets/2018.jpg');
     background-repeat: no-repeat;
@@ -69,6 +70,7 @@ nav a {
     padding: 50px 0px 0px 25px;
     font-size: 40px;
 }
+
 #about blockquote {
     font-size: 40px;
     color: brown;
@@ -79,10 +81,12 @@ nav a {
     line-height: 50px;
     letter-spacing: 1.5;
 }
+
 .projectsParent {
     display: grid;
-    margin-top: 15px;
-    height: 93%;
+    grid-gap: 10px;
+    margin: 15px;
+    height: 92%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -102,7 +106,7 @@ nav a {
     grid-area: project4;
 }
 .projects {
-    border: 2px solid black;
+    border: 2px solid #008CBA;
 }
 .projects {
     display: grid;
@@ -130,7 +134,8 @@ nav a {
     font-weight: bold;
 }
 .projects button {
-    margin: 10px 10px;border: none;
+    margin: 10px 10px;
+    border: none;
     background-color: #008CBA;
     padding: 10px 20px;
     text-align: center;
@@ -152,7 +157,47 @@ nav a {
     color: #008CBA;
 }
 
-
+#skills .container {
+    display: grid;
+    grid-gap: 10px;
+    margin: 15px;
+    height: 92%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "skillset1"
+        "skillset2"
+        "skillset3"
+}
+.skillset1 {
+    grid-area: skillset1;
+}
+.skillset2 {
+    grid-area: skillset2;
+}
+.skillset3 {
+    grid-area: skillset3;
+}
+#skills .skills {
+    border: 2px solid #008CBA;
+    display: grid;
+    grid-template-columns: repeat(20%);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "devicon-html5-plain devicon-css3-plain devicon-bootstrap-plain"
+}
+.skills i, .skills img {
+    margin: 15px;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    heoght: 100px;
+}
+.skills span {
+    font-size: 50px;
+    align-self: center;
+}
 
 
 
