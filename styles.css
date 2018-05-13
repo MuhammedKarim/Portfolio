@@ -238,6 +238,16 @@ nav a {
     color: rgb(207, 2, 2);
 }
 
+#education .table {
+    width: 85%;
+    margin: 50px auto;
+}
+#education thead {
+    background-color: rgb(68, 157, 187);
+}
+#education tbody {
+    background-color: rgb(132, 203, 226);
+}
 
 
 
@@ -262,12 +272,3 @@ nav a {
 
 
 
-
-
-
-
-
-
-
-
-/* carely.jeyda@itis0k.com */
