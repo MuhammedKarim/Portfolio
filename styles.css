@@ -164,7 +164,7 @@ nav a {
 #skills .container {
     display: grid;
     grid-gap: 10px;
-    margin: 30px;
+    margin: 30px auto;
     height: 92%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -241,14 +241,27 @@ nav a {
 #education .table {
     width: 85%;
     margin: 50px auto;
+    color: white;
+    font-size: 20px;
 }
 #education thead {
-    background-color: rgb(68, 157, 187);
+    background-color: rgb(19, 136, 175);
 }
 #education tbody {
-    background-color: rgb(132, 203, 226);
+    color: rgb(255, 255, 0);
 }
-
+#education tbody th:first-child {
+    background-color: rgb(81, 157, 182);
+}
+#education tbody td:nth-child(2) {
+    background-color: rgb(54, 143, 173);
+}
+#education tbody td:last-child {
+    background-color: rgb(51, 157, 192);
+}
+#education th, #education td {
+    padding: 1rem ;
+}
 
 
 
