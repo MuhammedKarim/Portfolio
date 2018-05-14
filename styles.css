@@ -77,18 +77,20 @@ nav a {
 
 #about blockquote {
     font-size: 40px;
-    color: brown;
+    color: rgb(1, 97, 129);
+    padding: 3rem;
 }
 #about p, #about li {
     margin: 10px 40px;
-    font-size: 20px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 30px;
     letter-spacing: 1.5;
+    color: rgb(0, 56, 75);
 }
 
 .projectsParent {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 3px;
     margin: 5px;
     height: 92%;
     grid-template-columns: 50% 50%;
@@ -240,15 +242,12 @@ nav a {
 
 #education .table {
     width: 85%;
-    margin: 50px auto;
+    margin: 35px auto;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 #education thead {
     background-color: rgb(19, 136, 175);
-}
-#education tbody {
-    color: rgb(255, 255, 0);
 }
 #education tbody th:first-child {
     background-color: rgb(81, 157, 182);
