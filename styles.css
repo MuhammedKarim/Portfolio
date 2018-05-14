@@ -10,7 +10,7 @@ nav {
     padding-top: 15px;
 }
 nav ul {
-    background-color: #e6e6e6;
+    background-color: #008CBA;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -35,11 +35,12 @@ nav ul {
     padding: 10px 100px 10px 30px;
 }
 nav a {
-    color: #808080;
+    color: white;
 }
 nav a:hover {
-    color: black;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 nav a {
     text-decoration: none;
@@ -50,6 +51,8 @@ nav a {
     height: 100vh;
     width: 95vw;
     margin: 2.5vh 1.25vw;
+    border: 2px solid #008CBA;
+    background-image: url('assets/bg.png');
 }
 .page .title {
     background-color: #008CBA;
@@ -60,10 +63,6 @@ nav a {
     margin: 0px;
     padding: 7px 15px;
 }
-.page {
-    border: 2px solid #008CBA;
-    background-image: url('assets/bg.png');
-}
 
 #home {
     background-image: url('assets/2018.jpg');
@@ -73,19 +72,6 @@ nav a {
 #home h1 {
     padding: 50px 0px 0px 25px;
     font-size: 40px;
-}
-
-#about blockquote {
-    font-size: 40px;
-    color: rgb(1, 97, 129);
-    padding: 3rem;
-}
-#about p, #about li {
-    margin: 10px 40px;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 1.5;
-    color: rgb(0, 56, 75);
 }
 
 .projectsParent {
@@ -262,8 +248,21 @@ nav a {
     padding: 1rem ;
 }
 
-
-
+.infoChild {
+    width: 40%;
+    display: inline-block;
+    margin: 6rem 4rem;
+    border: 2px solid #008CBA;
+    background-image: url('assets/bg.png');
+}
+.infoChild .text h1 {
+    font-weight: bold;
+    color: rgb(0, 80, 107);
+}
+.infoChild .text {
+    padding: 2rem;
+    color: rgb(0, 106, 141);
+}
 
 
 
